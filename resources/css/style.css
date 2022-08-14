@@ -569,7 +569,7 @@ header {
 
 .dropdown-content {
   position: absolute;
-  padding: 0 13.5px;
+  padding: 0 18.5px;
   max-height: 0;
   transition: max-height 0.5s ease-in-out;
   overflow: hidden;
