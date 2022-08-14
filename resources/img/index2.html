@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!-- Created By Tahira Jannat -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OrangeTolz</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Niramit:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./resources/css/style3.css" />
+  </head>
+
+  <body>
+    <input type="checkbox" id="nav-toggle" />
+
+    <div class="sidebar">
+      <div class="sidebar-brand">
+        <!-- <h2><span><i class="fab fa-accusoft"></i></span><span id="kleenpulse">LiquidTime</span></h2> -->
+        <img src="./resources/img/logo.png" alt="" />
+      </div>
+      <div class="sidebar-menu">
+        <ul>
+          <li>
+            <a href="#" class="active"
+              ><span class="fas fa-cubes"></span>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><span class="fas fa-users"></span>
+              <span>Customers</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><span class="fas fa-clipboard-list"></span>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><span class="fas fa-shopping-bag"></span>
+              <span>Orders</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><span class="fas fa-receipt"></span>
+              <span>Inventory</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><span class="fa fa-user-circle"></span>
+              <span>Accounts</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><span class="fas fa-clipboard"></span>
+              <span>Task</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-wrapper">
+      <div class="main-content">
+        <header>
+          <label for="nav-toggle">
+            <span class="fas fa-bars"></span>
+          </label>
+
+          <div class="user-wrapper">
+            <img
+              src="https://assets.codepen.io/3853433/internal/avatars/users/default.png?format=auto&version=1617122449&width=40&height=40"
+              alt=""
+            />
+            <div>
+              <h4>Alia Jui</h4>
+            </div>
+          </div>
+        </header>
+        <main>
+          <!-- <div id="pop-wrap">
+                    <h1 class="pop-up">Light Mode Activated</h1>
+                </div> -->
+
+          <div class="uneven-columns">
+            <div class="card-single">
+              <div>
+                <h1 id="customer"></h1>
+                <span>Happy Clients</span>
+              </div>
+              <div>
+                <span class="fas fa-users"></span>
+              </div>
+            </div>
+            <div class="even-columns">
+              <div class="card-single">
+                <div>
+                  <h1 id="customer"></h1>
+                  <span>Happy Clients</span>
+                </div>
+                <div>
+                  <span class="fa-solid fa-trash-can"></span>
+                  <!-- <i class="fa-solid fa-trash-can"></i> -->
+                </div>
+              </div>
+
+              <div class="card-single">
+                <div>
+                  <h1 id="customer"></h1>
+                  <span>Happy Clients</span>
+                </div>
+                <div>
+                  <span class="fas fa-users"></span>
+                </div>
+              </div>
+
+              <div class="card-single">
+                <div>
+                  <h1 id="customer"></h1>
+                  <span>Happy Clients</span>
+                </div>
+                <div>
+                  <span class="fas fa-users"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="even-columns">
+            <div class="customers">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="heading">New customer</h3>
+                  <button>
+                    Sell all<span class="fas fa-arrow-right"></span>
+                  </button>
+                </div>
+
+                <div class="card-body">
+                  <div class="customer">
+                    <div class="info">
+                      <img
+                        src="https://assets.codepen.io/3853433/internal/avatars/users/default.png?format=auto&version=1617122449&width=40&height=40"
+                        alt=""
+                      />
+                      <div>
+                        <h4>lion Emusky</h4>
+                        <small>CEO @ TLS</small>
+                      </div>
+                    </div>
+                    <div class="contact">
+                      <span class="fas fa-user-circle"></span>
+                      <span class="fas fa-comment"></span>
+                      <span class="fas fa-phone"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+           -->
+        </main>
+      </div>
+    </div>
+
+    <!-- <div class="dis-wrap">
+            <p class="display">[Some text here for refrence]</p>
+        </div> -->
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<!-- Created By Tahira Jannat -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OrangeTolz</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Niramit:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./resources/css/style.css" />
+    <script src="svg-inject.min.js"></script>
+  </head>
+
+  <body>
+    <input type="checkbox" id="nav-toggle" />
+
+    <div class="sidebar">
+      <div class="sidebar-brand">
+        <!-- <h2><span><i class="fab fa-accusoft"></i></span><span id="kleenpulse">LiquidTime</span></h2> -->
+        <img src="./resources/img/logo.png" alt="" />
+      </div>
+      <div class="sidebar-menu">
+        <ul>
+          <li>
+            <a href="#" class="active"
+              ><img
+                src="./resources/img/home-svgrepo-com.svg"
+                alt=""
+                class="svg-filter"
+              />
+
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="./resources/img/search-svgrepo-com 1.svg"
+                alt=""
+                class="svg-filter"
+              />
+              <span>Lookup</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="./resources/img/stacked-files-svgrepo-com 1.svg"
+                alt=""
+                class="svg-filter"
+              />
+              <span>Files </span>
+            </a>
+          </li>
+
+          <!-- dropdown menu  -->
+          <li>
+            <div class="dropdown-side-action" onclick="dropDown(this)">
+              <a href="#">
+                <img
+                  src="./resources/img/log-svgrepo-com 1.svg"
+                  alt=""
+                  class="svg-filter"
+                />
+                <span class="small-sidebar">Logs</span>
+              </a>
+              <span class="caret-down">
+                <i class="fa-solid fa-angle-down"></i>
+              </span>
+            </div>
+            <div class="dropdown-side-content">
+              <ul class="" role="list">
+                <a href="#">
+                  <img
+                    src="./resources/img/log-svgrepo-com 1.svg"
+                    alt=""
+                    class="svg-filter"
+                  />
+                  <span>Logs</span>
+                </a>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <a href="#"
+              ><img
+                src="./resources/img/buy-button 1.svg"
+                alt=""
+                class="svg-filter"
+              />
+              <span>Buy Credits</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="./resources/img/distribute 1.svg"
+                alt=""
+                class="svg-filter"
+              />
+              <span>Integrations</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="./resources/img/user 1.svg"
+                alt=""
+                class="svg-filter sidebar-menu-icon-active"
+              />
+              <span class="sidebar-menu-active">My Profile</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-wrapper">
+      <div class="main-content">
+        <header>
+          <label for="nav-toggle">
+            <span class="fas fa-bars"></span>
+          </label>
+          <div class="balence-status">
+            <span class="">Balance : </span>
+            <h4 class="">$125</h4>
+          </div>
+
+          <div class="user-wrapper">
+            <span class="header-avatar"></span>
+            <div>
+              <h4>Alexa Jui</h4>
+            </div>
+            <div class="dropdown-action" onclick="dropDown(this)">
+              <span class="caret-down">
+                <i class="fa-solid fa-angle-down"></i>
+              </span>
+            </div>
+            <div class="dropdown-content">
+              <ul class="dropdown-list" role="list">
+                <li class="dropdown-list-item">
+                  <span class="dropdown-title">my profile</span>
+                </li>
+                <li class="dropdown-list-item">
+                  <span class="dropdown-title">Add Fund</span>
+                </li>
+                <li class="dropdown-list-item">
+                  <span class="dropdown-title">API Documentation</span>
+                </li>
+                <li class="dropdown-list-item">
+                  <span class="dropdown-title">Log Out</span>
+                </li>
+                <li class="dropdown-list-item">
+                  <button>
+                    <img
+                      src="./resources/img/log-out-svgrepo-com 1.svg"
+                      alt=""
+                    />
+                    <span class="">log out</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </header>
+        <main class="bg-body-100">
+          <div class="uneven-columns long-card">
+            <div class="cards card-user-info">
+              <div>
+                <div class="user-info">
+                  <div class="user-avatar"></div>
+                  <div class="user-info">
+                    <h3>Alia Jui</h3>
+                    <h4>alexajui@gmail.com</h4>
+                    <h4>+1 354 785 4125</h4>
+                    <h4>3213 D Street, Columbus, USA</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <h2 class="fs-primary-heading card-title">Your Credit Cards</h2>
+              <div class="even-columns" id="cards-parent">
+                <div class="card-single">
+                  <div>
+                    <h2>Credit Card 1</h2>
+                    <h3>xxxxxxxxxxxx4684</h3>
+                  </div>
+                  <div class="delete-btns">
+                    <span class=""><i class="fa-solid fa-trash-can"></i></span>
+                  </div>
+                </div>
+
+                <div class="card-single" id="card-active">
+                  <div>
+                    <h2>Credit Card 2 (Default)</h2>
+                    <h3>xxxxxxxxxxxx4684</h3>
+                  </div>
+                  <div class="delete-btns">
+                    <span class=""><i class="fa-solid fa-trash-can"></i></span>
+                  </div>
+                </div>
+
+                <div class="card-single">
+                  <div>
+                    <h2>Credit Card 3</h2>
+                    <h3>xxxxxxxxxxxx4684</h3>
+                  </div>
+                  <div class="delete-btns">
+                    <span class=""><i class="fa-solid fa-trash-can"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab markup -->
+          <!-- Nav tabs -->
+          <div class="cards">
+            <div class="">
+              <div class="card-header">
+                <!-- <h3 class="heading">Recent Projects</h3> -->
+                <ul id="tab-ul" class="tabs" role="list">
+                  <li class="">
+                    <a
+                      rel="update-profile"
+                      href="#"
+                      onclick="javascript:ShowMyDiv(this);"
+                      >Update Profile</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      rel="change-password"
+                      href="#"
+                      onclick="javascript:ShowMyDiv(this);"
+                      >Change Password</a
+                    >
+                  </li>
+                  <li class="selected">
+                    <a
+                      rel="email-notifications"
+                      href="#"
+                      onclick="javascript:ShowMyDiv(this);"
+                      >Email Notifications</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      rel="settings"
+                      href="#"
+                      onclick="javascript:ShowMyDiv(this);"
+                      >Auto Recharge Settings</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tabcontents">
+                  <div
+                    class="tabcontent"
+                    id="email-notifications"
+                    style="display: block"
+                  >
+                    <div class="notification">
+                      <div class="notification-checkbox">
+                        <label class="switch">
+                          <input type="checkbox" checked />
+                          <span class="slider" id="round"></span>
+                        </label>
+                        <h3 class="active">
+                          Notify me when list verification completes
+                        </h3>
+                      </div>
+                      <div class="notification-checkbox">
+                        <label class="switch">
+                          <input type="checkbox" />
+                          <span class="slider" id="round"></span>
+                        </label>
+                        <h3 class="inactive">
+                          Notify me when list export completes
+                        </h3>
+                      </div>
+                      <div class="notification-checkbox">
+                        <label class="switch">
+                          <input type="checkbox" checked />
+                          <span class="slider" id="round"></span>
+                        </label>
+                        <h3 class="active">
+                          Notify me when list verification result is about to
+                          expire
+                        </h3>
+                      </div>
+                      <div class="credit-check">
+                        <div class="notification-checkbox">
+                          <label class="switch">
+                            <input type="checkbox" checked />
+                            <span class="slider" id="round"></span>
+                          </label>
+                          <h3 class="active">Receive Low Credits Email</h3>
+                        </div>
+                        <div class="even-columns outline">
+                          <div class="input-wrapper">
+                            <label for="email">Send Email to</label>
+                            <input
+                              type="email"
+                              id="email"
+                              required
+                              placeholder="alexajui@gmail.com"
+                            />
+                          </div>
+
+                          <div class="input-wrapper">
+                            <label for="number"
+                              >When credits are less than</label
+                            >
+                            <input
+                              type="text"
+                              id="number"
+                              required
+                              placeholder="50"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="tabcontent"
+                  id="update-profile"
+                  style="display: none"
+                >
+                  <div class="notification-checkbox notification">
+                    <h2 class="button">Nothing added here yet</h2>
+                  </div>
+                </div>
+
+                <div
+                  class="tabcontent"
+                  id="change-password"
+                  style="display: none"
+                >
+                  <div class="notification-checkbox notification">
+                    <label class="switch">
+                      <input type="checkbox" checked />
+                      <span class="slider" id="round"></span>
+                    </label>
+                    <h3 class="active">
+                      Notify me when list verification completes
+                    </h3>
+                  </div>
+                </div>
+                <div class="tabcontent" id="settings" style="display: none">
+                  <div class="notification-checkbox notification">
+                    <label class="switch">
+                      <input type="checkbox" checked />
+                      <span class="slider" id="round"></span>
+                    </label>
+                    <h3 class="active">
+                      Notify me when list verification completes
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="notification btn-save">
+                <button>Save changes</button>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- <div class="dis-wrap">
+            <p class="display">[Some text here for refrence]</p>
+        </div> -->
+    <script src="./resources/js/index.js"></script>
+  </body>
+</html>
